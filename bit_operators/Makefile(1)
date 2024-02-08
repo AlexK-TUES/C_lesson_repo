@@ -1,0 +1,10 @@
+make all: quadraticroots.o main.out
+
+quadraticroots.o: quadraticroots.c quadraticroots.h
+	gcc -c quadraticroots.c -o quadraticroots.o
+
+main.out:
+	gcc main.c quadraticroots.o -lm -o main.out
+
+make clean:
+	rm -f *o *out

@@ -1,0 +1,10 @@
+make all: processes.o taskmanager.out
+
+processes.o: processes.c
+	gcc -c processes.c -o processes.o
+
+taskmanager.out: taskmanager.c processes.o
+	gcc taskmanager.c processes.o -o taskmanager.out
+
+make clean:
+	rm -f *.o *.out
