@@ -1,2 +1,2 @@
 # C_lesson_repo
-## We should wright _*something* here, shouldn't we?_ 
+## We should write _*something* here, shouldn't we?_ 
